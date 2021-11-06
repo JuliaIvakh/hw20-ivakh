@@ -1,5 +1,6 @@
 const array = [1, 2, 3, 4, 5, 2];
 const array2 = ["Nastya", "Julia", "Kate", "Dima", "Maks"];
+
 //indexOf
 function indexOf(arr, value) {
   for (let i = 0; i < arr.length; i++) {
