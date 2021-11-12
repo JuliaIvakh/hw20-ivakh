@@ -31,7 +31,6 @@ function find(arr, value) {
   for (let i of arr) {
     if (i === value) return value;
   }
-  return undefined;
 }
 
 console.log(find(array2, "Dima"));
@@ -39,14 +38,12 @@ console.log(find(array2, "Dima"));
 //findIndex
 function findIndex(arr, value) {
   for (let i of arr) {
-    if (i === value)
+    if (i === value) {
       for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === value) {
-          return i;
-        }
+        if (arr[i] === value) return i;
       }
+    }
   }
-  return undefined;
 }
 
 console.log(findIndex(array2, "Julia"));
